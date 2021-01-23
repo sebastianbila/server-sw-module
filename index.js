@@ -3,25 +3,12 @@ const { BaseError, InternalServerError, ValidationError } = require('./lib/error
 const baseErrorMiddleware = require('./lib/middlewares/baseErrorMiddleware')
 const responses = require('./lib/responses')
 
-const consts = {
+module.exports = {
   HTTP_CODE,
-  CONTENT_TYPE
-}
-
-const errors = {
+  CONTENT_TYPE,
   BaseError,
   InternalServerError,
-  ValidationError
-}
-
-const middlewares = {
+  ValidationError,
   baseErrorMiddleware,
+  ...responses
 }
-
-module.exports = {
-  consts,
-  middlewares,
-  errors,
-  responses,
-}
-
