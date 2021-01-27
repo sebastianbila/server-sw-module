@@ -1,10 +1,11 @@
 {
   "name": "server-sw-module",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Server responses and error handler",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "test:server": "nodemon test/app.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,12 @@
   "author": "Sebastian Bila <sebastianbila.sw@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.17.1",
     "express-validation": "^3.0.6",
     "nodemon": "^2.0.6"
   },
   "peerDependencies": {
     "express-validation": "^2.0.0"
-  }
+  },
+  "dependencies": {}
 }
