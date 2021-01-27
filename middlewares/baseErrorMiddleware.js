@@ -1,6 +1,6 @@
 const { ValidationError } = require('express-validation')
 const { BaseError } = require('../errors')
-const { internalServerError, badRequest, baseResponse } = require('../responses')
+const { responses: { internalServerError, badRequest, baseResponse } } = require('../responses')
 const { CONTENT_TYPE, HTTP_CODE } = require('../consts')
 const ResponseErrorModel = require('./helperModels/responseErrorModel')
 
